@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+img{
+    display: block;
+    width: auto;
+    height: auto;
+}
 body{
     background-color: gainsboro;
 }
@@ -81,11 +86,31 @@ section > img, section > video{
     clear: both;
     visibility: hidden;
 }
-/*.grey, section > video, figure>img{
-    background-color: #445161;
-    color: white;
-}*/
+.dignity {
+    background-color: #f3f3f3;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.dignity-title {
+    font-size: x-large;
+    color: grey;
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.wrapper {
+    width: 48%;
+    border: 1px solid red;
+}
 summary{
+    line-height: 30px;
+    margin-left: 40px;
+    text-align: left;
     outline: none;
     font-weight: bold;
     position: relative;
@@ -94,16 +119,16 @@ summary::-webkit-details-marker{
     display: none;
 }
 summary:before{
+    color: white;
     content: "+";
     font-size: 30px;
     text-align: center;
     display: block;
     width: 30px;
     height: 30px;
-    background-color: royalblue;
+    background-color: #434d59;
     position: absolute;
-    top: -5px;
-    left: -5px;
+    left: -40px;
 }
 details[open] summary:before{
     content: "-";
@@ -111,8 +136,11 @@ details[open] summary:before{
 details{
     margin: 10px;
     border: 1px solid black;
-    max-height: 90px;
     overflow: hidden;
+}
+details p{
+    margin-left: 40px;
+    text-align: left;
 }
 ul {
     list-style-image: url(../img/mark.png);
@@ -132,41 +160,101 @@ figure> img{
 }
 figcaption{
     height: 50px;
-    width: 50%;
+    width: 70%;
 }
 figcaption> span{
+    padding-left: 10px;
     font-size: large;
+    font-weight: bold;
+    color: #434d59;
 }
 figcaption> p{
     padding-left: 10px;
 }
 .review{
+    padding-bottom: 10px;
     position: relative;
     text-align: left;
 }
 .review span{
     font-size: medium;
     color: slategray;
-    padding-left: 45px;
+    padding-left: 10px;
 }
 .review p{
     margin: 0;
     padding: 5px;
-    padding-left: 45px;
+    padding-left: 10px;
     min-height: 30px;
 }
 .review .ava{
     position: absolute;
     top: 5px;
-    left: 10px;
-    height: 30px;
-    width: 30px;
+    left: -60px;
+    height: 45px;
+    width: 45px;
     background-color: slategray;
     border-radius: 50%;
 }
 .review > div{
+    margin-left: 60px;
     display: inline-block;
     width: 80%;
+}
+.message {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    position: relative;
+}
+
+.message:before {
+    content: "";
+    display: block;
+    border: 10px solid transparent;
+    border-right: 15px solid #e8e8e8;
+    position: absolute;
+    top: 17px;
+    left: -25px;
+}
+.contacts {
+    background-color: #f3f3f3;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+form, address{
+    display: inline-block;
+    width: 40%
+}
+form> input, form> textarea{
+    height: 25px;
+    margin: 10px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+form> textarea{
+    height: 100px;
+}
+form> input[type="submit"]{
+    margin:0 auto;
+    width:40%;
+}
+address>span{
+    width: 100%;
+    display: block;
+}
+.column .fa-stack{
+    display: block;
+}
+.linear{
+    text-align: left;
 }
 footer{
     text-align: center;
