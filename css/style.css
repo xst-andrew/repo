@@ -8,7 +8,7 @@ img{
     height: auto;
 }
 body{
-    background-color: gainsboro;
+    background-color: #1e1e1e;
 }
 .wrapper{
     margin: 0 auto;
@@ -82,7 +82,7 @@ section > img, section > video{
     background-color: #444d5c;
     padding-bottom: 40px;
 }
-.reviews{
+.reviews, footer{
     background-color: #f3f3f3;
 }
 .dynamic{
