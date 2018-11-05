@@ -11,7 +11,7 @@ body{
     background-color: gainsboro;
 }
 .wrapper{
-    margin: auto;
+    margin: 0 auto;
     width: 800px;
 }
 .header{
@@ -39,31 +39,14 @@ section{
     text-align: center;
     background-color: white;
     padding: 20px;
-    border: 1px solid black;
     display: flex;
 }
-/*section span, section h1{
-    font-size: xx-large;
-    display: flex;
-    width: 100%;
-    padding-left: 20px;
-}*/
 section>div{
     display: inline-block;
-    border: 1px solid greenyellow;
 }
 .half{
     width: 49%;
 }
-.left{
-    float: left;
-}
-.right{
-    float: right;
-}
-/*.product{
-    width: 60%;
-}*/
 .product p{
     text-align: left;
     padding-top: 5px;
@@ -72,7 +55,6 @@ section>div{
 }
 section > img, section > video{
     background-color: white;
-    border: 1px solid black;
     height: 150px;
     width: 35%;
 }
@@ -87,25 +69,43 @@ section > img, section > video{
     visibility: hidden;
 }
 .dignity {
-    background-color: #f3f3f3;
+    background-color: #fff;
     margin: 0 auto;
-    border: 1px solid black;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
 }
+.address{
+    justify-content: space-around;
+    background-color: #444d5c;
+    padding-bottom: 40px;
+}
+.reviews{
+    background-color: #f3f3f3;
+}
+.dynamic{
+    background-color: #f3f3f3;
+    align-items: flex-start;
 
+}
 .dignity-title {
     font-size: x-large;
     color: grey;
     width: 100%;
-    border: 1px solid black;
     text-align: center;
+    margin-bottom: 20px;
 }
-
+.address .dignity-title{
+    color: white;
+}
 .wrapper {
     width: 48%;
-    border: 1px solid red;
+}
+.dynamic .wrapper {
+    margin: 0;
+    width: 48%;
 }
 summary{
     line-height: 30px;
@@ -209,7 +209,48 @@ figcaption> p{
     background-color: #e8e8e8;
     position: relative;
 }
-
+.price{
+    flex-direction: row;
+    width: 28%;
+    height: auto;
+    background-color: #444d5c;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #444d5c;
+}
+.price span, .price ul, .price button{
+    display: block;
+}
+.price .header{
+    padding: 10px;
+    font-size: 30px;
+}
+.ptag{
+    padding: 10px;
+    font-size: 50px;
+    background-color: white;
+    color: #444d5c;
+}
+ol{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-position: inside;
+    color: white;
+}
+.price button{
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: white;
+    text-transform: uppercase;
+    color: #444d5c;
+    font-weight: bold;
+    margin-bottom: 15px;
+    outline: none;
+}
 .message:before {
     content: "";
     display: block;
@@ -230,7 +271,7 @@ figcaption> p{
 }
 form, address{
     display: inline-block;
-    width: 40%
+    width: 40%;
 }
 form> input, form> textarea{
     height: 25px;
@@ -245,16 +286,22 @@ form> textarea{
 form> input[type="submit"]{
     margin:0 auto;
     width:40%;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: white;
+    text-transform: uppercase;
+    color: #444d5c;
+    font-weight: bold;
+    outline: none;
 }
-address>span{
+.column span{
     width: 100%;
-    display: block;
-}
-.column .fa-stack{
-    display: block;
+    display: flex;
+    color: white;
 }
 .linear{
     text-align: left;
+    color: #444d5c;
 }
 footer{
     text-align: center;
